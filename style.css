@@ -1,0 +1,61 @@
+
+      body {
+        margin: 0; /* 设置页面边距为0，去除默认边距 */
+        font-family: Arial, sans-serif; /* 设置页面字体为Arial, 如果没有则使用sans-serif */
+      }
+
+      .menu-button {
+        position: absolute; /* 设置按钮为绝对定位，可以根据其包含元素进行定位 */
+        top: 5px; /* 设置按钮距离顶部5像素的位置 */
+        right: 20px; /* 设置按钮距离右侧20像素的位置 */
+        padding: 8px 12px; /* 设置按钮的上下内边距为8像素，左右内边距为12像素 */
+        background-color: rgb(105, 155, 255); /* 设置按钮背景颜色为蓝色 */
+        color: rgb(255, 255, 255); /* 设置按钮文本颜色为白色 */
+        border: none; /* 不显示按钮的边框 */
+        border-radius: 4px; /* 设置按钮的圆角半径为4像素 */
+        cursor: pointer; /* 鼠标悬停时显示为指针形状，表示按钮可点击 */
+        font-size: 16px; /* 设置按钮文字大小为16像素 */
+      }
+
+      .menu {
+        position: fixed; /* 固定定位，始终保持在 viewport 内 */
+        top: 0; /* 菜单距离顶部0像素 */
+        left: -100%; /* 初始位置在屏幕外，即左侧隐藏 */
+        width: 60%; /* 菜单宽度为屏幕宽度的60% */
+        height: 100%; /* 菜单高度为100% */
+        background-color: rgb(204, 204, 204); /* 设置菜单背景颜色 */
+        transition: left 0.3s; /* 添加菜单显示和隐藏时的平滑过渡效果 */
+        padding: 15px; /* 菜单内边距为15像素 */
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* 添加阴影效果，使菜单显得浮动 */
+      }
+
+      .menu.show {
+        left: 0; /* 当菜单显示时，将其位置设置为0，进入视口 */
+      }
+
+      /* 去除菜单列表的默认样式 */
+      .menu ul {
+        list-style-type: none; /* 去除列表项的默认样式 */
+        padding: 0; /* 去除列表的内边距 */
+      }
+
+      /* 设置菜单项的上下外边距 */
+      .menu li {
+        margin: 15px 0; /* 设置每个菜单项上下的外边距为15像素 */
+      }
+
+      /* 去除菜单链接的下划线 */
+      .menu a {
+        text-decoration: none; /* 去除链接文本的下划线 */
+        color: black; /* 设置链接文本颜色为黑色 */
+      }
+
+      /* 鼠标悬停在链接上时添加下划线 */
+      .menu a:hover {
+        text-decoration: underline; /* 鼠标悬停时显示下划线 */
+      }
+
+      .menu-bar {
+        display: flex; /* 使用弹性布局显示菜单栏 */
+        flex-direction: row; /* 设置菜单项的排列方向为水平 */
+      }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 设置字符编码为UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 兼容IE浏览器 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 设置视口，支持响应式设计 -->
+    <meta name="description" content="你好呀，这是我的第一个网页！" />
+    <!-- 网页描述 -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- 引入外部CSS样式文件 -->
+    <title>夕辞柳的个人网站</title>
+    <!-- 网页标题 -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- 引入外部样式表，用于定义网页的样式 -->
+  </head>
+  <body class="body">
+    <div class="menu-bar">
+      <div
+        id="photo1"
+        class="menu-bar"
+        style="
+          background-color: rgb(242, 242, 242);
+          width: 90%;
+          height: 45px;
+          text-align: left;
+        "
+      >
+        <img
+          src="https://s21.ax1x.com/2024/11/29/pA5ydAK.jpg"
+          alt="图片加载失败"
+          draggable="true"
+          style="width: 45px; height: 45px"
+        />
+      </div>
+      <div
+        class="menu-bar"
+        style="
+          background-color: rgb(242, 242, 242);
+          width: 10%;
+          height: 45px;
+          text-align: center;
+        "
+      >
+        <button class="menu-button" onclick="toggleMenu()">菜单</button>
+        <!-- 菜单按钮 -->
+      </div>
+    </div>
+    <header>
+      <h1 style="text-align: center">欢迎来到我的个人网站</h1>
+      <!-- 网站主标题 -->
+    </header>
+    <nav class="menu" id="sideMenu">
+      <h2>导航菜单</h2>
+      <ul>
+        <li><a href="#">关于我</a></li>
+        <li><a href="#">作品</a></li>
+        <li><a href="#">联系我</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section
+        style="
+          -webkit-border-radius: 12px; /* 设置圆角 */
+          -moz-border-radius: 12px; /* 设置圆角 */
+          border-radius: 12px; /* 设置圆角 */
+          background-color: rgb(204, 204, 204); /* 背景颜色 */
+          margin: 0px 5% 0px 5%; /* 上下为0，左右为5%的外边距 */
+        "
+      >
+        <p
+          style="
+            text-align: center; /* 文字居中 */
+            display: block; /* 块级显示 */
+            font-size: 24px; /* 字体大小 */
+            font-weight: bold; /* 字体加粗 */
+            padding: 10px; /* 内边距 */
+            margin: 0px; /* 外边距为0 */
+          "
+        >
+          简介
+          <!-- 小节标题 -->
+        </p>
+        <p style="text-align: center; padding: 10px; margin: 0px">
+          我是一个热爱编程和设计的学生，热爱生活，热爱分享。我是一个有梦想的人，这个网站是我展示自己作品和项目的地方，欢迎来到我的网站！
+          <!-- 简介内容 -->
+        </p>
+      </section>
+      <section
+        style="
+          -webkit-border-radius: 12px; /* 设置圆角 */
+          -moz-border-radius: 12px; /* 设置圆角 */
+          border-radius: 12px; /* 设置圆角 */
+          background-color: rgb(204, 204, 204); /* 背景颜色 */
+          margin: 0px 5% 0px 5%; /* 上下为0，左右为5%的外边距 */
+        "
+      >
+        <h2 style="text-align: center">我的作品</h2>
+        <!-- 作品小节标题 -->
+        <ul>
+          <li>
+            <h3>作品一</h3>
+            <!-- 作品标题 -->
+            <p>暂时还没有作品...</p>
+            <!-- 作品描述 -->
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div style="margin: 0px 5% 0px 5%">
+      <footer>
+        <p>&copy; 2023 我的个人网站。保留所有权利。</p>
+        <!-- 页脚内容 -->
+      </footer>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("sideMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
+<!-- 网页内容结束 -->
