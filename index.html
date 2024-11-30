@@ -7,7 +7,7 @@
     <!-- 兼容IE浏览器 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 设置视口，支持响应式设计 -->
-    <meta name="description" content="你好呀，这是我的第一个网页！" />
+    <meta name="description" content="你好呀，这是我的个人网站，欢迎来访！" />
     <!-- 网页描述 -->
     <link rel="stylesheet" href="styles.css" />
     <!-- 引入外部CSS样式文件 -->
@@ -15,6 +15,9 @@
     <!-- 网页标题 -->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!-- 引入外部样式表，用于定义网页的样式 -->
+    <link rel="icon" href="./photos/Avatar.png" type="image/x-icon" />
+    <script src="script.js"></script>
+    <!-- 引入外部JavaScript文件 -->
   </head>
   <body class="body">
     <div class="menu-bar">
@@ -28,12 +31,15 @@
           text-align: left;
         "
       >
-        <img
-          src="https://s21.ax1x.com/2024/11/29/pA5ydAK.jpg"
-          alt="图片加载失败"
-          draggable="true"
-          style="width: 45px; height: 45px"
-        />
+        <a href="index.html">
+          <img
+            src="./photos/Avatar.png"
+            alt="图片加载失败"
+            draggable="true"
+            style="width: 45px; height: 45px"
+        /></a>
+        <!-- 头像 -->
+        <b style="font-size: 25px; margin-left: 5px; margin-top: px">夕辞柳</b>
       </div>
       <div
         class="menu-bar"
@@ -44,10 +50,13 @@
           text-align: center;
         "
       >
-        <button class="menu-button" onclick="toggleMenu()">菜单</button>
+        <button class="menu-button" onclick="toggleMenu()">
+          <img src="./photos/menu.png" alt="菜单" class="menu-icon" />
+        </button>
         <!-- 菜单按钮 -->
       </div>
     </div>
+
     <header>
       <h1 style="text-align: center">欢迎来到我的个人网站</h1>
       <!-- 网站主标题 -->
@@ -55,9 +64,8 @@
     <nav class="menu" id="sideMenu">
       <h2>导航菜单</h2>
       <ul>
-        <li><a href="#">关于我</a></li>
-        <li><a href="#">作品</a></li>
-        <li><a href="#">联系我</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="Page 2.html">关于我</a></li>
       </ul>
     </nav>
     <main>
@@ -115,13 +123,6 @@
         <!-- 页脚内容 -->
       </footer>
     </div>
-
-    <script>
-      function toggleMenu() {
-        var menu = document.getElementById("sideMenu");
-        menu.classList.toggle("show");
-      }
-    </script>
   </body>
 </html>
 <!-- 网页内容结束 -->
