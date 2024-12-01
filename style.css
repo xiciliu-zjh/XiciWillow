@@ -114,4 +114,57 @@ body {
   /* 使用弹性布局显示菜单栏 */
   flex-direction: row;
   /* 设置菜单项的排列方向为水平 */
+  background-color: rgba(242, 242, 242);
+  /* 设置按钮背景颜色为透明 */
 }
+
+/* 容器样式 */
+.container {
+  top: 3px;
+  /* 设置按钮距离顶部3像素的位置 */
+  right: 0px;
+  /* 设置按钮距离右侧0像素的位置 */
+  padding: 6px 8px;
+  /* 设置按钮的上下内边距为6像素，左右内边距为8像素 */
+  text-align: center;
+  /* 文字居中对齐 */
+  text-decoration: none;
+  /* 无下划线 */
+  cursor: pointer;
+  /* 鼠标悬停时显示为手型 */
+  flex-direction: row;
+  /* 设置菜单项的排列方向为水平 */
+  background-color: rgba(255, 0, 0, 0);
+}
+
+/* 点赞按钮样式 */
+.likebutton {
+  border: none;
+  /* 无边框 */
+  text-align: center;
+  /* 文字居中对齐 */
+  text-decoration: none;
+  /* 无下划线 */
+  cursor: pointer;
+  /* 鼠标悬停时显示为手型 */
+  width: 24px;
+  /* 宽度为24像素 */
+  height: 24px;
+  /* 高度为24像素 */
+  background-color: rgba(255, 255, 255, 0);
+  /* 设置按钮背景颜色为透明 */
+}
+
+.likeButton{
+  border: none;
+  /* 无边框 */
+  background-color: rgba(255, 255, 255, 0);
+  /* 设置按钮背景颜色为透明 */
+}
+
+  .likeCount {
+  font-size: 15px;
+  /* 设置字体大小为15像素 */
+  margin: 0;  /* 上下外边距设为0 */
+  display: inline-block;  /* 设为内联块元素 */
+  }

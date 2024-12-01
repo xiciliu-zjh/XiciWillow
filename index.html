@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!-- 引入外部样式表，用于定义网页的样式 -->
     <link rel="icon" href="./photos/Avatar.png" type="image/x-icon" />
-    <script src="script.js"></script>
-    <!-- 引入外部JavaScript文件 -->
   </head>
   <body class="body">
     <div class="menu-bar">
@@ -36,11 +34,33 @@
             src="./photos/Avatar.png"
             alt="图片加载失败"
             draggable="true"
-            style="width: 45px; height: 45px"
+            style="
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              /* 边框为圆形 */
+            "
         /></a>
         <!-- 头像 -->
-        <b style="font-size: 25px; margin-left: 5px; margin-top: px">夕辞柳</b>
+        <b style="font-size: 25px; margin-left: 5px">夕辞柳</b>
       </div>
+      <div class="container">
+        <div class="like">
+          <button id="likeButton" class="likeButton">
+            <img
+              id="likeIcon"
+              class="likebutton"
+              src="./photos/like.png"
+              alt="点赞"
+            />
+          </button>
+        </div>
+        <div class="like">
+          <p id="likeCount" class="likeCount">0</p>
+        </div>
+      </div>
+      <!-- 点赞按钮 -->
+
       <div
         class="menu-bar"
         style="
@@ -123,6 +143,8 @@
         <!-- 页脚内容 -->
       </footer>
     </div>
+    <script src="script.js"></script>
+    <!-- 引入外部JavaScript文件 -->
   </body>
 </html>
 <!-- 网页内容结束 -->
