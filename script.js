@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
             // 如果已经点赞，取消点赞
             count--;
             hasLiked = false; // 更新状态为未点赞
-            likeIcon.src = "./photos/like.png"; // 修改按钮图标为未点赞图标
+            likeIcon.src = "https://s21.ax1x.com/2024/12/06/pA7C1UJ.png"; // 修改按钮图标为未点赞图标
             likeButton.style.backgroundColor = ""; 
         } else {
             // 如果没有点赞，进行点赞
             count++;
             hasLiked = true; // 更新状态为已点赞
-            likeIcon.src = "./photos/likefill.png"; // 修改按钮图标为已点赞图标
+            likeIcon.src = "https://s21.ax1x.com/2024/12/06/pA7CD5d.png"; // 修改按钮图标为已点赞图标
             likeButton.style.backgroundColor = "lightblue"; 
         }
         
