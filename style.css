@@ -81,6 +81,15 @@ body {
   /* 当菜单显示时，将其位置设置为0，进入视口 */
 }
 
+.menu-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* 使图片变成圆形 */ 
+  align-items: center;
+  /* 图片居中 */
+}
+
 /* 去除菜单列表的默认样式 */
 .menu ul {
   list-style-type: none;
@@ -122,9 +131,9 @@ body {
 .container {
   top: 3px;
   /* 设置按钮距离顶部3像素的位置 */
-  right: 0px;
-  /* 设置按钮距离右侧0像素的位置 */
-  padding: 6px 8px;
+  right: 10px;
+  /* 设置按钮距离右侧10像素的位置 */
+  padding: 0px;
   /* 设置按钮的上下内边距为6像素，左右内边距为8像素 */
   text-align: center;
   /* 文字居中对齐 */
@@ -155,16 +164,18 @@ body {
   /* 设置按钮背景颜色为透明 */
 }
 
-.likeButton{
+.likeButton {
   border: none;
   /* 无边框 */
   background-color: rgba(255, 255, 255, 0);
   /* 设置按钮背景颜色为透明 */
 }
 
-  .likeCount {
+.likeCount {
   font-size: 15px;
   /* 设置字体大小为15像素 */
-  margin: 0;  /* 上下外边距设为0 */
-  display: inline-block;  /* 设为内联块元素 */
-  }
+  margin: 0;
+  /* 上下外边距设为0 */
+  display: inline-block;
+  /* 设为内联块元素 */
+}
