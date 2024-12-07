@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
 <html lang="zh-Ch">
+  <!-- 设置文档语言为中文 -->
   <head>
     <meta charset="UTF-8" />
     <!-- 设置字符编码为UTF-8 -->
@@ -14,13 +16,15 @@
     <title>关于我</title>
     <!-- 网页标题 -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <!-- 引入外部样式表，用于定义网页的样式 -->
+    <!-- 引入外部样式表 -->
     <link rel="icon" href="./photos/Avatar.png" type="image/x-icon" />
-    <script src="script.js"></script>
-    <!-- 引入外部JavaScript文件 -->
+    <!-- 网页图标 -->
   </head>
   <body class="body">
+    <!-- 页面主体 -->
+
     <div class="menu-bar">
+      <!-- 菜单栏开始 -->
       <div
         id="photo1"
         class="menu-bar"
@@ -32,108 +36,119 @@
         "
       >
         <a href="index.html">
+          <!-- 返回首页 -->
           <img
             src="https://s21.ax1x.com/2024/11/30/pA5ziUP.jpg"
             alt="图片加载失败"
             draggable="true"
             class="menu-avatar"
-        /></a>
-        <!-- 头像 -->
+          />
+          <!-- 头像 -->
+        </a>
         <b style="font-size: 25px; margin-left: 5px">夕辞柳</b>
+        <!-- 显示昵称 -->
       </div>
+
       <div class="container">
+        <!-- 容器开始 -->
         <div class="like">
+          <!-- 点赞区域 -->
           <button id="likeButton" class="likeButton">
+            <!-- 点赞按钮 -->
             <img
               id="likeIcon"
               class="likebutton"
               src="https://s21.ax1x.com/2024/12/06/pA7C1UJ.png"
               alt="点赞"
             />
+            <!-- 点赞图标 -->
           </button>
         </div>
         <div class="like">
+          <!-- 显示点赞数量 -->
           <p id="likeCount" class="likeCount">0</p>
+          <!-- 初始点赞数量为0 -->
         </div>
       </div>
-      <!-- 点赞按钮 -->
+      <!-- 容器结束 -->
 
-    </div>
       <div
         class="menu-bar"
         style="
           background-color: rgb(242, 242, 242);
-          width: 10%;
+          width: 8%;
           height: 45px;
           text-align: center;
         "
       >
         <button class="menu-button" onclick="toggleMenu()">
-          <img src="https://s21.ax1x.com/2024/12/06/pA7Cy8I.png" alt="菜单" class="menu-icon" />
+          <!-- 菜单按钮 -->
+          <img
+            src="https://s21.ax1x.com/2024/12/06/pA7Cy8I.png"
+            alt="菜单"
+            class="menu-icon"
+          />
+          <!-- 菜单图标 -->
         </button>
-        <!-- 菜单按钮 -->
       </div>
+      <!-- 菜单按钮结束 -->
     </div>
+    <!-- 菜单栏结束 -->
 
     <header>
       <h1 style="text-align: center">关于我</h1>
       <!-- 页面主标题 -->
     </header>
+
     <nav class="menu" id="sideMenu">
+      <!-- 侧边菜单 -->
       <h2>导航菜单</h2>
+      <!-- 导航标题 -->
       <ul>
         <li><a href="index.html">首页</a></li>
+        <!-- 首页链接 -->
         <li><a href="Page 2.html">关于我</a></li>
+        <!-- 关于我链接 -->
       </ul>
     </nav>
+
     <main>
       <section
         style="
-          -webkit-border-radius: 12px; /* 设置圆角 */
-          -moz-border-radius: 12px; /* 设置圆角 */
-          border-radius: 12px; /* 设置圆角 */
-          background-color: rgb(204, 204, 204); /* 背景颜色 */
-          margin: 0px 5% 0px 5%; /* 上下为0，左右为5%的外边距 */
+          -webkit-border-radius: 12px;
+          border-radius: 12px;
+          background-color: rgb(204, 204, 204);
+          margin: 0px 5%;
         "
       >
         <p
           style="
-            text-align: center; /* 文字居中 */
-            display: block; /* 块级显示 */
-            font-size: 24px; /* 字体大小 */
-            font-weight: bold; /* 字体加粗 */
-            padding: 10px; /* 内边距 */
+            text-align: center;
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
           "
         >
           个人信息
-          <!-- 小节标题 -->
         </p>
-        <p style="padding: 10px; margin: 0px; padding: 1px 10px 1px 10px">
-          网名：夕辞柳
-          <!-- 个人网名 -->
-        </p>
-        <p style="padding: 10px; margin: 0px; padding: 1px 10px 1px 10px">
-          职业：学生
-          <!-- 个人职业 -->
-        </p>
-        <p style="padding: 10px; margin: 0px; padding: 1px 10px 10px 10px">
-          兴趣：编程、游戏
-          <!-- 个人兴趣 -->
-        </p>
+        <!-- 小节标题 -->
+        <p style="padding: 10px; margin: 0px">网名：夕辞柳</p>
+        <!-- 个人网名 -->
+        <p style="padding: 10px; margin: 0px">职业：学生</p>
+        <!-- 个人职业 -->
+        <p style="padding: 10px; margin: 0px">兴趣：编程、游戏</p>
+        <!-- 个人兴趣 -->
       </section>
     </main>
-    <div style="margin: 0px 5% 0px 5%">
+    <div style="margin: 0px 5%">
       <footer>
         <p>&copy; 2023 我的个人网站。保留所有权利。</p>
         <!-- 页脚内容 -->
       </footer>
     </div>
 
-    <script>
-      function toggleMenu() {
-        var menu = document.getElementById("sideMenu");
-        menu.classList.toggle("show");
-      }
-    </script>
+    <script src="script.js"></script>
+    <!-- 引入外部JavaScript文件 -->
   </body>
 </html>
